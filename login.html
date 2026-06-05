@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <title>Login</title>
+  </head>
+  <body>
+    <main class="page-wrapper">
+      <section class="auth-card" aria-labelledby="login-title">
+        <div class="card-header">
+          <a
+            href="index.html"
+            class="icon-back"
+            aria-label="Voltar à página inicial"
+          >
+            <i class="bi bi-arrow-left"></i>
+          </a>
+          <h1 id="login-title">Registro de Ponto</h1>
+          <p>Acesse sua conta para iniciar o registro do dia.</p>
+        </div>
+
+        <form action="registro.html" method="get" class="auth-form">
+          <div class="field-group">
+            <label for="inUser">Usuário</label>
+            <input
+              type="text"
+              id="inUser"
+              name="usuario"
+              placeholder="Digite seu usuário"
+              autocomplete="username"
+              required
+            />
+          </div>
+
+          <div class="field-group">
+            <label for="inSenha">Senha</label>
+            <input
+              type="password"
+              id="inSenha"
+              name="senha"
+              placeholder="Digite sua senha"
+              autocomplete="current-password"
+              required
+            />
+          </div>
+
+          <div class="auth-actions">
+            <button type="submit" class="btn btn-primary">Entrar</button>
+          </div>
+        </form>
+
+        <p class="hint">
+          Login de demonstração: <strong>000</strong> / senha:
+          <strong>000</strong>.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

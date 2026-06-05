@@ -1,0 +1,61 @@
+.auth-card {
+  display: grid;
+  gap: 2rem;
+}
+
+.auth-form {
+  display: grid;
+  gap: 1.6rem;
+}
+
+.field-group {
+  display: grid;
+  gap: 0.8rem;
+}
+
+label {
+  font-size: 1.9rem;
+  color: #334e68;
+}
+
+input {
+  width: 100%;
+  padding: 1.4rem 1.6rem;
+  border-radius: 1rem;
+  border: 1px solid #d9e2ec;
+  font-size: 1.4rem;
+  background: #f8fafc;
+  color: #102a43;
+}
+
+input::placeholder {
+  color: #94a3b8;
+}
+
+input:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, 0.18);
+  border-color: rgba(37, 99, 235, 0.3);
+}
+
+.auth-actions {
+  display: grid;
+  gap: 1rem;
+}
+
+.btn-primary {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .auth-card {
+    gap: 2.4rem;
+  }
+
+  .auth-form {
+    gap: 2rem;
+  }
+
+  .auth-actions {
+    grid-template-columns: 1fr 1fr;
+  }
+}

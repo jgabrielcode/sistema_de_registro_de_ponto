@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/registro.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <title>Registro de Ponto</title>
+  </head>
+  <body>
+    <main class="page-wrapper">
+      <section class="registro-card" aria-labelledby="registro-title">
+        <div class="page-header">
+          <a
+            href="login.html"
+            class="icon-back"
+            aria-label="Voltar à tela de login"
+          >
+            <i class="bi bi-arrow-left"></i>
+          </a>
+          <h1 id="registro-title">Registro de Ponto</h1>
+          <p>
+            Marque seu horário de entrada e saída com um painel moderno e
+            responsivo.
+          </p>
+        </div>
+
+        <div class="registro-actions">
+          <button type="button" id="btn-bater-ponto" class="btn btn-primary">
+            Bater ponto
+          </button>
+          <button type="button" class="btn btn-secondary">Ver histórico</button>
+        </div>
+
+        <div class="registro-info">
+          <div class="registro-item">
+            <span>Entrada</span>
+            <strong id="entrada">00:00</strong>
+          </div>
+          <div class="registro-item">
+            <span>Intervalo</span>
+            <strong id="intervalo">00:00</strong>
+          </div>
+          <div class="registro-item">
+            <span>Retorno</span>
+            <strong id="retorno">00:00</strong>
+          </div>
+          <div class="registro-item">
+            <span>Saída</span>
+            <strong id="saida">00:00</strong>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="registro.js"></script>
+  </body>
+</html>
