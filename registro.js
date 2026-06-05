@@ -6,16 +6,22 @@
         const saida = document.querySelector("#saida");
 
         let count = 0;
-  
 
+        
       if (botaoBaterPonto) {
-
+      
         
         botaoBaterPonto.addEventListener("click", () => {
           botaoBaterPonto.textContent = "Ponto registrado";
           botaoBaterPonto.classList.remove("btn-primary");
           botaoBaterPonto.classList.add("btn-success");
           botaoBaterPonto.disabled = true;
+
+        if (count > 3) {
+          alert("teste");
+          return;
+        }
+
 
           
 
@@ -45,6 +51,7 @@
             count++;
         }else if(count ==3){
             saida.textContent = `${hora}:${minutos}`
+            count++
         }
       });
 
